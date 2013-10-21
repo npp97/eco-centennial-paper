@@ -1,3 +1,4 @@
+*.pdf
 *.acn
 *.acr
 *.alg
@@ -30,3 +31,5 @@
 *.vrb
 *.xdy
 *.tdo
+*.xml
+*-blx.bib

@@ -1,0 +1,72 @@
+\documentclass{article}
+\usepackage{color}
+
+% biblatex for citations
+\usepackage[backend=bibtex, style=ele]{biblatex}
+\addbibresource{eco-centennial-paper.bib}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% use Jtxt for John's text edits (in blue)
+% use Jcom for John's comments (in blue small caps)
+% use Ntxt for Nick's text edits (in red)
+% use Ncom for Nick's comments (in red small caps)
+
+\newcommand{\Jtxt}[1]{\textcolor{blue}{#1}}
+\newcommand{\Jcom}[1]{\textsc {\textcolor{blue}{#1}}}
+\newcommand{\Ntxt}[1]{\textcolor{red}{#1}}
+\newcommand{\Ncom}[1]{\textsc {\textcolor{red}{#1}}} 
+
+% author info
+\author{Nicholas J. Gotelli\\
+        John Stanton-Geddes\\
+        Department of Biology\\
+        University of Vermont\\
+        Burlington VT 05405 USA}
+        
+
+% title info
+\title{The ecological and evolutionary consequences of climate change: from species distribution modeling to -omics}
+
+
+\date{2 September 2013} % best to hard type current date for records
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\maketitle
+\begin{abstract}
+The climate is changing and there is a lot of activity in ecology trying to predict what is going to happen. SDMs are very popular, but they mostly ignore species interactions, and don't consider the possibility of phenotypic plasticity and evolutionary change as responses. Popular models are built on a flawed statistical framework, and the forecasts just can't be trusted.
+
+We need to study the physiological and phenotypic responses of species across their geographic ranges. More experiments and replicated field data are needed, and less speculative modeling based on presence-only records. Proteomic and transciptomic studies get us closer to understanding the range of  potential responses to climate change; studies of genetic variation in alleles that code for important molecules like heat shock protein will let us estimate the potential for an evolutionary response. Discuss a few exemplary studies from different labs. Although ecologists are starting to use these tools, most recent studies still do not sample across geographic ranges, replicate properly, or even include benchmark testing of the reliability of sequence alignments. Experimental manipulations in the field and the lab, field transplant experiments, and measurements of gene expression from populations collected across the geographic range of a species are the next steps to take.
+
+We need to study the physiological and phenotypic responses of species across their geographic ranges. More experiments and replicated field data are needed, and less speculative modeling based on presence-only records. Proteomic and transciptomic studies get us closer to understanding the range of  potential responses to climate change; studies of genetic variation in alleles that code for important molecules like heat shock protein will let us estimate the potential for an evolutionary response. Discuss a few exemplary studies from different labs. Although ecologists are starting to use these tools, most recent studies still do not sample across geographic ranges, replicate properly, or even include benchmark testing of the reliability of sequence alignments. Experimental manipulations in the field and the lab, field transplant experiments, and measurements of gene expression from populations collected across the geographic range of a species are the next steps to take. 
+
+\Ncom{Hi John. In the spirit of \LaTeX WYSIWYM writing, I suggest we postpone formatting until near the very end.}
+
+Instead, let's get some text developed and start populating the bibliography. I have set up 4 new commands that act like a poor man's track changes. When you want to add or edit something, just copy the entire paragraph, bracket it with Jtex \Jtxt{edited text here} and make your edits. If you are making comments, use Jcom \Jcom{comments here}. Your comments and edits will show up in blue, and mine will show up in red. Each round of changes, I will be adding red text. When you get it, you can accept changes and decolorize the red, then add your own new material (text, edits, comments). This is how we used to do it with highlighting in the days before track changes. Let's see how it works.
+ 
+\Ncom{Can you look into how to set up a bibliography in Gummi? Thanks!}
+\Jcom{Done! See below}
+
+\end{abstract}
+% main text
+\section*{Species Distribution Modeling}
+
+Summarize current state of the art, which assumes no species interactions, does not allow for phenotypic response or evolutionary change. Assumes species have constant niches throughout their geographic ranges. Recent ecology letters paper uses SDMs for pop gen data, which seems to be a step in the right direction. More speculative suggestions in Nature paper that John mentioned???
+
+\Jtxt{Here's an example of a citation using \parencite{ettinger_climate_2013} and this citation with the year only; Thomas et al. \parencite*{thomas_extinction_2004}. It's also possible to have just the author in text with year following   \textcite{aitken_assisted_2013}. }
+
+ \Jtxt{The bibtex file \emph{eco-centennial-paper.bib} is in the same directory and the \textbf{bibtexkey} is the string used to specifify a citation.}
+
+\section*{Transcriptomics and Proteomics}
+Describe how these tools can be used to create a true \emph{forecasting} model. What are the precise experiments and measurements we need to forecast how a species range is going to change? Genetic variation across the range? Estimates of heritability? Measurements of variation in heat shock proteins? How can do this operationally in a way that is better than SDMs? Flow chart or graphic for what is to be measured, how to analyze it, and how to forecast range shifts (or lack thereof).
+
+\section*{Case Studies}
+Two or three examples, a few paragraphs each, possibly with some tables or graphs. Not sure yet whether to include our own stuff...
+
+\section*{Conclusions}
+
+\printbibliography
+
+% need to figure out how to set up bibliography in BibTex. Also, any formatting details for Ecology that we need to be ready for.
+\end{document}
